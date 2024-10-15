@@ -494,121 +494,29 @@ print('')
 print('******************************************************************')
 """
 
-
-
-
 """
-::::::::::::::::::::::       Code Ended        ::::::::::::::::::::::::::::::
-::::::::::::::::::::::       Code Ended        ::::::::::::::::::::::::::::::
-::::::::::::::::::::::       Code Ended        ::::::::::::::::::::::::::::::
-::::::::::::::::::::::       Code Ended        ::::::::::::::::::::::::::::::
-::::::::::::::::::::::       Code Ended        ::::::::::::::::::::::::::::::
-::::::::::::::::::::::       Code Ended        ::::::::::::::::::::::::::::::
+Q - 26
 """
-
-
-
-
-
-
-
-
-
-
-
-
-'''
-1) Write a program to make a calculator using conditional statements 
-2) Write a program to print the Fibonacci series upto n terms. 
-3) Write a program to use while loop to find factorial of a number
-4) Write a program to Implement a function to check if a given string is a palindrome
-5) Perform various functions on Lists (Slicing, Sorting)
-
-'''
-
-
-
-#1
-print('Question 1')
-print('Calculator')
-
-def Calculator():
-  A = int(input('Enter a number A:'))
-  B = int(input('Enter a number B:'))
-  D = {1 : '+', 2 : '-',3 : '*',4 : '/'}
-  print(D)
-  C = str(input('Enter Choice No :'))
-  if C == '1':
-    print('A + B = ',A + B)
-  elif C == '2':
-    print('A - B = ',A - B)
-  elif C == '3':
-    print('A * B = ',A * B)
-  elif C == '4':
-    print('A / B = ',A / B)
-  else:
-    print('Invalid Choice')
-while True:
-  Ask = input('Do you want to use Calculator (Yes/No) :')
-  if Ask == 'No':
-    break
-  else:
-    Calculator()
-  print('*****************************************************************') 
-"""
-#2
-
-
-print('Question 2')
-print('Fibonacci Series')
-A = int(input('Enter till how many terms you want to print : '))
-print('')
-B = 0
-C = 1
-print(B,end = ' ')
-print(C,end = ' ')
-for i in range(A-2):
-  D = B + C
-  print(D,end = ' ')
-  B = C
-  C = D
-print('')
-print('')
-print('******************************************************************')
-print('')
-
-#3
-print('Question 3')
-print('To find Factorial of a number .')
-Num = int(input('Enter a number : '))
-c = 1
-for i in range(1,Num+1):
-  c = c*i
-print(Num,'! = ',c)
-print('******************************************************************')
-
-
-
-#5
-print('Question 5')
-print('List Functions')
+print('Answer 26')
 List = []
-while True:
-  A = str(input('Enter a content(numbers/characters): '))
-  List.append(A)
-  Ask = str(input('Want to Enter more content (Yes/No) :'))
-  if Ask.capitalize() == 'No':
+Sum = 0
+while True :
+  Input = int(input("Enter a number : "))
+  List.append(Input)
+  Sum += Input
+  Ask = input("Want to Enter more Data (Y/N) :")
+  if Ask.upper() == "N":
     break
-print('List :', List)
-print('Slicing')
-for i in range(len(List)):
-  print(List[i:i+1])
-print('Sorting')
-List.sort()
 print(List)
-print('Reversing')
-List.reverse()
-print(List)
+print("Sum of All Numbers in List : " , Sum)
+print('')
 print('******************************************************************')
-"""
 
+"""
+Q - 27
+"""
+print("Answer 27")
+while True :
+  Str = str(input("Enter a word : "))
+  for I in Str[::-1]:
+    print(I,end = '')
