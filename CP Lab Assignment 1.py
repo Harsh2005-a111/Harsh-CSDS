@@ -494,6 +494,49 @@ print('')
 print('******************************************************************')
 """
 
+"""
+26. Write a Python function to sum all the numbers in a list. 
+Sample List : [8, 2, 3, 0, 7]
+Expected Output : 20
+"""
+"""
+print('Answer 26')
+List = []
+Sum = 0
+while True :
+  Input = int(input("Enter a number : "))
+  List.append(Input)
+  Sum += Input
+  Ask = input("Want to Enter more Data (Y/N) :")
+  if Ask.upper() == "N":
+    break
+print(List)
+print("Sum of All Numbers in List : " , Sum)
+print('')
+print('******************************************************************')
+"""
+
+"""
+27. Write a Python program that accepts a word from the user and reverses it,     using a loop 
+"""
+"""
+print("Answer 27")
+while True :
+  Str = str(input("Enter a word : "))
+  for I in Str[::-1]:
+    print(I,end = '')
+  print("")
+  Ask = input("Want to Enter another Word (Y/N): ")
+  if Ask == "N":
+      break
+"""
+
+"""
+28. Write a Pandas program to create a dataframe from a dictionary and display
+    it.
+"""
+
+
 
 
 
