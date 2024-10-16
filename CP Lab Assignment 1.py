@@ -494,7 +494,6 @@ print('')
 print('******************************************************************')
 """
 
-<<<<<<< HEAD
 """
 26. Write a Python function to sum all the numbers in a list. 
 Sample List : [8, 2, 3, 0, 7]
@@ -536,36 +535,3 @@ while True :
 28. Write a Pandas program to create a dataframe from a dictionary and display
     it.
 """
-
-
-
-
-
-=======
->>>>>>> 008c147d3be9a45d2aac5011159729853808dae1
-"""
-Q - 26
-"""
-print('Answer 26')
-List = []
-Sum = 0
-while True :
-  Input = int(input("Enter a number : "))
-  List.append(Input)
-  Sum += Input
-  Ask = input("Want to Enter more Data (Y/N) :")
-  if Ask.upper() == "N":
-    break
-print(List)
-print("Sum of All Numbers in List : " , Sum)
-print('')
-print('******************************************************************')
-
-"""
-Q - 27
-"""
-print("Answer 27")
-while True :
-  Str = str(input("Enter a word : "))
-  for I in Str[::-1]:
-    print(I,end = '')
