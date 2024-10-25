@@ -853,7 +853,7 @@ print(myvar.info())
 <<<<<<< HEAD
 # Congratulations ! You have completed 1st Semester.
 """
-
+"""
 
 class ZeroBalanceError(Exception):
     pass
@@ -869,4 +869,4 @@ try:
         
 except ZeroBalanceError:
     print("Exception occurred: Balance less than or equal to zero.")
-
+"""
