@@ -870,3 +870,16 @@ try:
 except ZeroBalanceError:
     print("Exception occurred: Balance less than or equal to zero.")
 """
+myfamily = {
+  " Name1 " : {"First Name : "  : "Harsh",
+               "Middle Name: " : "Raj"  ,
+               "Last Name  : "   : "Srivastava"
+             } ,
+  " Name2 " : {"First Name : "  : "Saumya",
+               "Last Name  : "   : "Srivastava"
+              } ,
+}
+for I,J in myfamily.items():
+  print(I)
+  for K in J:
+    print(K , J[K]) 
