@@ -80,7 +80,7 @@ Write a program to check the grades of a student as follows
 
 # Question 1
 print('Question 1')
-Radius = int(input('Enter Radius :'))
+Radius = float(input('Enter Radius :'))
 Area = 3.14 * Radius ** 2
 print("Area :" , Area)
 print('')
