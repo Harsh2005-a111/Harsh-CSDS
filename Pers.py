@@ -77,13 +77,15 @@ Write a program to check the grades of a student as follows
 60 - 70 = C
 
 '''
-"""
+
 # Question 1
 print('Question 1')
 Radius = int(input('Enter Radius :'))
 Area = 3.14 * Radius ** 2
 print("Area :" , Area)
 print('')
+
+"""
 # Question 2
 print('Question 2')
 Num1 = int(input('Enter Num1 :'))
