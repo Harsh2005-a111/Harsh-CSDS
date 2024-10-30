@@ -879,7 +879,54 @@ myfamily = {
                "Last Name  : "   : "Srivastava"
               } ,
 }
+'''
 for I,J in myfamily.items():
   print(I)
   for K in J:
     print(K , J[K]) 
+    
+'''
+'''
+In the bustling city of Numerville, a young mathematician named Priya has always been fascinated by the world of numbers. One day, her mentor, Professor Rao, presented her with an intriguing challenge. The task was to find the smallest positive integer N such that the factorial of N (denoted as N!) is perfectly divisible by a given number K (where K≥2).
+
+Professor Rao assured Priya that there was always a solution within the given constraints.
+
+Input Format
+
+The input is given from Standard Input in the following format:
+
+K
+
+Constraints
+
+2≤K≤1012
+
+K is an integer.
+
+Output Format
+
+Print the minimum positive integer N such that N! is a multiple of K.
+
+Sample Input 0
+
+30
+Sample Output 0
+
+5
+Explanation 0
+
+1!=1 2!=2×1=2 3!=3×2×1=6 4!=4×3×2×1=24 5!=5×4×3×2×1=120 Therefore, 5 is the minimum positive integer N such that N! is a multiple of 30. Thus, 5 should be printed.
+
+Sample Input 1
+
+123456789011
+Sample Output 1
+
+123456789011
+Sample Input 2
+
+280
+Sample Output 2
+
+7
+'''
