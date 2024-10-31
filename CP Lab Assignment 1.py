@@ -578,8 +578,8 @@ Exam_Data = {'Name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Micha
  'Qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
 
 A=pd.DataFrame(Exam_Data)
-print(A[["Name","Score"]])
-print(f"numner of rows:{len(A)}")
-print(f"number of columns:{len(A.columns)}")
+print(A[["Name","Score","Attempts","Qualify"]])
+print(f"Number of Rows : {len(A)}")
+print(f"Number of Columns : {len(A.columns)}")
 
 
