@@ -493,7 +493,7 @@ print(List2)
 print('')
 print('******************************************************************')
 """
-
+'''
 """
 Q - 26
 """
@@ -520,3 +520,17 @@ while True :
   Str = str(input("Enter a word : "))
   for I in Str[::-1]:
     print(I,end = '')
+'''
+"""
+28. Write a Pandas program to create a dataframe from a dictionary and display it.
+Sample data: {'X':[78,85,96,80,86], 'Y':[84,94,89,83,86],'Z':[86,97,96,72,83]}
+"""
+
+import pandas as pd
+dict1={
+    "x":[78,85,96,80,86],
+    "y":[84,94,89,83,86],
+    "z":[86,97,96,72,83]}
+a=pd.DataFrame(dict1)
+print(a)
+
