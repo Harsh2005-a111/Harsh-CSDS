@@ -570,16 +570,16 @@ exam_data = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Micha
 """
 
 import pandas as pd
-print("Answer 29 ")
+print("Answer 30 ")
 Exam_Data = {'Name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew',
  'Laura', 'Kevin', 'Jonas'],
  'Score': [12.5, 9, 16.5, 9, 20, 14.5, 8, 19,23,13],
  'Attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
- 'Qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
+ 'Qualify': ['Yes', 'No', 'Yes', 'No', 'No', 'Yes', 'Yes', 'No', 'No', 'Yes']}
 
 A=pd.DataFrame(Exam_Data)
 print(A[["Name","Score","Attempts","Qualify"]])
-print(f"Number of Rows : {len(A)}")
+print(f"Number of Rows    : {len(A)}")
 print(f"Number of Columns : {len(A.columns)}")
 
 
