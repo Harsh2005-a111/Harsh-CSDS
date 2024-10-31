@@ -521,11 +521,12 @@ while True :
   for I in Str[::-1]:
     print(I,end = '')
 '''
+'''
 """
 28. Write a Pandas program to create a dataframe from a dictionary and display it.
 Sample data: {'X':[78,85,96,80,86], 'Y':[84,94,89,83,86],'Z':[86,97,96,72,83]}
 """
-
+print("Answer 28 ")
 import pandas as pd
 dict1={
     "x":[78,85,96,80,86],
@@ -533,4 +534,25 @@ dict1={
     "z":[86,97,96,72,83]}
 a=pd.DataFrame(dict1)
 print(a)
+'''
+
+"""
+29 Write a Pandas program to select the 'name' and 'score' columns from the following
+DataFrame.
+exam_data = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew',
+ 'Laura', 'Kevin', 'Jonas'],
+ 'score': [12.5, 9, 16.5, 9, 20, 14.5, 8, 19,23,13],
+ 'attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
+ 'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
+"""
+
+import pandas as pd
+exam_data = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew',
+ 'Laura', 'Kevin', 'Jonas'],
+ 'score': [12.5, 9, 16.5, 9, 20, 14.5, 8, 19,23,13],
+ 'attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
+ 'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
+
+a=pd.DataFrame(exam_data)
+print(a[['name','score']])
 
