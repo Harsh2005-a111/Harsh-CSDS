@@ -558,3 +558,27 @@ a=pd.DataFrame(Exam_Data)
 print(a[['Name','Score']])
 '''
 
+"""
+30. Write a Pandas program to count the number of rows and columns of a DataFrame.
+Sample Python dictionary data and list labels
+
+exam_data = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew',
+ 'Laura', 'Kevin', 'Jonas'],
+ 'score': [12.5, 9, 16.5, 9, 20, 14.5, 8, 19,23,13],
+ 'attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
+ 'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
+"""
+
+import pandas as pd
+print("Answer 29 ")
+Exam_Data = {'Name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew',
+ 'Laura', 'Kevin', 'Jonas'],
+ 'Score': [12.5, 9, 16.5, 9, 20, 14.5, 8, 19,23,13],
+ 'Attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
+ 'Qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
+
+A=pd.DataFrame(Exam_Data)
+print(f"numner of rows:{len(A)}")
+print(f"number of columns:{len(A.columns)}")
+
+
