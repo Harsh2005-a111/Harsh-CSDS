@@ -926,12 +926,3 @@ Sample Output 2
 
 7
 '''
-'''
-Analyze a sales dataset to identify trends in product sales over time.
-Calculate the total sales, average sales per product, and sales by region. 
-Use Pandas to handle data grouping and aggregation.'''
-
-import pandas as pd
-df = pd.read_csv( "store_product_sales_data(1).csv")
-print(df.to_string())
-
