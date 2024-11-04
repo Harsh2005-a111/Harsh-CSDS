@@ -78,15 +78,6 @@ Write a program to check the grades of a student as follows
 
 '''
 """
-# Question 1
-print('Question 1')
-Radius = float(input())
-Area = 3.14 * Radius ** 2
-print("Area :" , Area)
-print('')
-"""
-
-"""
 # Question 2
 print('Question 2')
 Num1 = int(input('Enter Num1 :'))
@@ -873,6 +864,7 @@ try:
 except ZeroBalanceError:
     print("Exception occurred: Balance less than or equal to zero.")
 """
+'''
 myfamily = {
   " Name1 " : {"First Name : "  : "Harsh",
                "Middle Name: " : "Raj"  ,
@@ -882,6 +874,7 @@ myfamily = {
                "Last Name  : "   : "Srivastava"
               } ,
 }
+'''
 '''
 for I,J in myfamily.items():
   print(I)
@@ -939,6 +932,6 @@ Calculate the total sales, average sales per product, and sales by region.
 Use Pandas to handle data grouping and aggregation.'''
 
 import pandas as pd
-df = pd.read_csv( "store_product_sales_data(1).csv" , 'r')
+df = pd.read_csv( "store_product_sales_data(1).csv")
 print(df.to_string())
 
