@@ -77,13 +77,14 @@ Write a program to check the grades of a student as follows
 60 - 70 = C
 
 '''
-
+"""
 # Question 1
 print('Question 1')
 Radius = float(input())
 Area = 3.14 * Radius ** 2
 print("Area :" , Area)
 print('')
+"""
 
 """
 # Question 2
@@ -932,3 +933,12 @@ Sample Output 2
 
 7
 '''
+'''
+Analyze a sales dataset to identify trends in product sales over time.
+Calculate the total sales, average sales per product, and sales by region. 
+Use Pandas to handle data grouping and aggregation.'''
+
+import pandas as pd
+df = pd.read_csv( "store_product_sales_data(1).csv" , 'r')
+print(df.to_string())
+
