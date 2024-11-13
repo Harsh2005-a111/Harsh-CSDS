@@ -582,4 +582,5 @@ print(A[["Name","Score","Attempts","Qualify"]])
 print(f"Number of Rows    : {len(A)}")
 print(f"Number of Columns : {len(A.columns)}")
 
-
+# Use Ctrl + / to comment out or in multiple lines at same time
+ 
