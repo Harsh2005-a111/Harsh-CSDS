@@ -936,3 +936,5 @@ class Student:
 
 s1 = Student("Harsh" , [ 99 , 98 , 97 ])
 print(s1.get_average())
+s1.name = "Saumya" # Changing the name going inside the class.
+print(s1.get_average())
