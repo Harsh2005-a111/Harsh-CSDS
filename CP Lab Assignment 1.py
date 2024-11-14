@@ -1,3 +1,4 @@
+
 """
 CP Lab Assignment
 """
@@ -568,7 +569,7 @@ exam_data = {'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Micha
  'attempts': [1, 3, 2, 3, 2, 3, 1, 1, 2, 1],
  'qualify': ['yes', 'no', 'yes', 'no', 'no', 'yes', 'yes', 'no', 'no', 'yes']}
 """
-
+"""
 import pandas as pd
 print("Answer 30 ")
 Exam_Data = {'Name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily', 'Michael', 'Matthew',
@@ -581,6 +582,49 @@ A=pd.DataFrame(Exam_Data)
 print(A[["Name","Score","Attempts","Qualify"]])
 print(f"Number of Rows    : {len(A)}")
 print(f"Number of Columns : {len(A.columns)}")
+"""
 
 # Use Ctrl + / to comment out or in multiple lines at same time
+# import numpy as np
+
+# arr = np.array([[ 1 , 2 , 3 , 4 , 5] , [6 , 7 , 8 , 9 , 0 ]])
+# print(arr[1][1:5])
+# print(arr[0:2 , 1:5 ]) # From both elements , returns the list of length 4 with start index 1 and end index 4...
+
+import pandas as pd
+import time
+df = pd.read_csv('C:\\Users\harsh\Downloads\data.csv')
+print(df.to_string())
+print()
+print("**************************************************************")
+
+mydataset = {
+  'Cars'     : ['BMW' , 'Volvo', 'Ford'] , 
+  'Passings' : [ 3 , 7 , 2 ]
+}
+df = pd.DataFrame(mydataset)
+print(df)
+print()
+print("**************************************************************")
+
+"""
+Labels : If not specified , the labels are indexed as 0 1 2 etc...
+       : One can also specify the index as per its own choice...
+EXAMPLE ==>>>
+"""
+print("Displaying Above Table with changed index as per user")
+print(".")
+time.sleep(2)
+print("./n")
+time.sleep(2)
+print(".")
+time.sleep(2)
+mydataset = {
+  'Cars'     : ['BMW' , 'Volvo', 'Ford'] , 
+  'Passings' : [ 3 , 7 , 2 ]
+}
+df = pd.DataFrame(mydataset , index = [ 1 , 2 , 3 ])
+print(df)
+print()
+print("**************************************************************")
  
