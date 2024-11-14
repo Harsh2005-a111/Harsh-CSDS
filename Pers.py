@@ -923,6 +923,16 @@ Sample Input 2
 
 280
 Sample Output 2
-
-7
 '''
+class Student:
+  def __init__(self , name , marks ):
+    self.name  = name
+    self.marks = marks
+    
+  def get_average(self):
+    Sum = sum(self.marks)
+    Num = len(self.marks)
+    return f"The Average Marks scored by {self.name} is {Sum/Num} . "  
+
+s1 = Student("Harsh" , [ 99 , 98 , 97 ])
+print(s1.get_average())
