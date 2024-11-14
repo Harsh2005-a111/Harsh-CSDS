@@ -924,6 +924,7 @@ Sample Input 2
 280
 Sample Output 2
 '''
+'''
 class Student:
   def __init__(self , name , marks ):
     self.name  = name
@@ -938,3 +939,30 @@ s1 = Student("Harsh" , [ 99 , 98 , 97 ])
 print(s1.get_average())
 s1.name = "Saumya" # Changing the name going inside the class.
 print(s1.get_average())
+'''
+
+"""
+Create Account Class with 2 attributes - balance and account no.
+Create methods for debit credit and printing the balance...
+"""
+class Account:
+  def __init__(self , balance , account_no ):
+    self.balance    = balance
+    self.account_no = account_no
+  
+  def debit(self):
+    debitamt = int(input("Enter amt. to be debited (in Rupees) :"))
+    self.balance -= debitamt
+  
+  def credit(self):
+    creditamt = int(input("Enter amt. to be credited (in Rupees) :"))
+    self.balance += creditamt
+  
+  def show(self):
+    return self.balance
+
+Acc = Account( 90000 , "H12401414")
+Acc.debit()
+Acc.show()
+Acc.credit()
+Acc.show()
