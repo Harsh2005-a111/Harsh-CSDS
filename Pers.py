@@ -1053,6 +1053,7 @@ p1 = Person()
 print(p1.name) # No change observed...
 
 """
+"""
 # Changing the class attribute 'name'.
 
 class Person:
@@ -1069,3 +1070,74 @@ class Person:
 p1 = Person()
 p1.change("Harsh") # Output : Hi
 print(p1.name)     # Output : Harsh
+"""
+
+# Changing the percentage when changing the marks...
+# Method 1 ==>
+
+"""
+class Student:
+    def __init__(self , phy , chem , math):
+        self.phy = phy
+        self.chem = chem
+        self.math = math
+
+    
+    def calc(self):
+        self.percentage = str((self.phy + self.chem + self.math) / 3)
+
+stud1 = Student(98 , 97 , 99)
+
+stud1.calc()
+
+stud1.phy = 89
+stud1.calc()
+print(stud1.percentage)
+"""
+
+# Method 2 ==>
+"""
+class Student:
+  def __init__(self , phy , chem , math):
+    self.phy = phy
+    self.chem = chem
+    self.math = math
+
+  @property  
+  def calc(self):
+    print(str((self.phy + self.chem + self.math) / 3))
+
+stud1 = Student(98 , 97 , 99)
+(stud1.calc)
+stud1.phy = 89
+(stud1.calc)
+"""
+class Complex:
+    def __init__(self , real , img):
+        self.real = real
+        self.img = img
+        
+    def show(self):
+        print(f"{self.real} + {self.img} j")
+    
+    def __add__(self , num2):
+        NewReal = self.real + num2.real
+        NewImg  = self.img + num2.img
+        return Complex(NewReal , NewImg)
+    
+    def __sub__(self , num2):
+        NewReal = self.real - num2.real
+        NewImg  = self.img - num2.img
+        return Complex(NewReal , NewImg)
+
+num1 = Complex(1 , 3)
+num1.show()
+
+num2 = Complex(5 , 4)
+num2.show()
+
+num3 = num1 + num2
+num3.show()
+
+num4 = num2 - num1
+num4.show()
