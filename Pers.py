@@ -970,3 +970,36 @@ Create methods for debit credit and printing the balance...
 # creditamt = int(input("Enter amt. to be credited (in Rupees) :")) 
 # Acc.credit(creditamt)
 # print(f"Balance is now Rs.{Acc.show()}")
+
+# class Person:
+#   __name = "Anonymous"
+  
+#   def __hello(self):
+#     print("Hello Person!")
+  
+#   def welcome(self):
+#     self.__hello()
+
+# p1 = Person()
+
+# p1.welcome() 
+
+class Car :
+  
+  @staticmethod
+  def start():
+    return "car started..."
+  
+  @staticmethod 
+  def stop():
+    return "car stopped..."
+    
+class Lamborghini(Car):
+
+  def __init__(self , name):
+    self.name = name 
+
+car1 = Lamborghini("Urus")
+
+print(car1.start())
+print(car1.name)
