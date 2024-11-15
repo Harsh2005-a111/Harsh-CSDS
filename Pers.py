@@ -950,19 +950,23 @@ class Account:
     self.balance    = balance
     self.account_no = account_no
   
-  def debit(self):
-    debitamt = int(input("Enter amt. to be debited (in Rupees) :"))
+  def debit(self , debitamt):
     self.balance -= debitamt
+    print(f"Rs.{debitamt} was  debited...")
   
-  def credit(self):
-    creditamt = int(input("Enter amt. to be credited (in Rupees) :"))
+  def credit(self , creditamt):
     self.balance += creditamt
-  
+    print(f"Rs.{creditamt} was credited...")
+    
   def show(self):
     return self.balance
 
-Acc = Account( 90000 , "H12401414")
-Acc.debit()
-Acc.show()
-Acc.credit()
-Acc.show()
+init_amt = int(input("Enter your initial amt in bank account :"))
+Acc = Account( init_amt , "H12401414")
+print(Acc.account_no)
+debitamt = int(input("Enter amt. to be debited (in Rupees) :"))
+Acc.debit(debitamt)
+print(f"Balance is now Rs.{Acc.show()}")
+creditamt = int(input("Enter amt. to be credited (in Rupees) :")) 
+Acc.credit(creditamt)
+print(f"Balance is now Rs.{Acc.show()}")
