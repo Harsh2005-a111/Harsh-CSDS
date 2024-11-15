@@ -983,9 +983,12 @@ Create methods for debit credit and printing the balance...
 # p1 = Person()
 
 # p1.welcome() 
-
+"""
 class Car :
   
+  def __init__(self , type):
+    self.type = type
+    
   @staticmethod
   def start():
     return "car started..."
@@ -996,10 +999,36 @@ class Car :
     
 class Lamborghini(Car):
 
-  def __init__(self , name):
-    self.name = name 
+  def __init__(self , name , type):
+    self.name = name
+    self.type = type # This implies that the type attribute changes inside
+                     # the Lamborghini class and not the Car Class...
 
-car1 = Lamborghini("Urus")
+car1 = Lamborghini("Urus" , "xc1") 
 
-print(car1.start())
-print(car1.name)
+print(car1.name , car1.type)
+"""
+
+
+class Car :
+  
+  def __init__(self , type):
+    self.type = type
+    
+  @staticmethod
+  def start():
+    return "car started..."
+  
+  @staticmethod 
+  def stop():
+    return "car stopped..."
+    
+class Lamborghini(Car):
+
+  def __init__(self , name , type):
+    self.name = name
+    super().__init__(type)
+
+car1 = Lamborghini("Urus" , "xc1") 
+
+print(car1.name , car1.type)
