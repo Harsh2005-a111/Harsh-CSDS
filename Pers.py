@@ -1009,7 +1009,7 @@ car1 = Lamborghini("Urus" , "xc1")
 print(car1.name , car1.type)
 """
 
-
+"""
 class Car :
   
   def __init__(self , type):
@@ -1032,3 +1032,40 @@ class Lamborghini(Car):
 car1 = Lamborghini("Urus" , "xc1") 
 
 print(car1.name , car1.type)
+"""
+"""
+class Person:
+  name = "anonymous"
+  
+  def change(self , name):
+    self.name = name # This name is not same as class 'name'.
+                     # We cannot change this 'name' using object 'name'.
+                     # The object 'name' is created independently.
+                     
+p1 = Person()
+print(p1.name)
+
+p2 = Person()
+p2.change("Harsh")
+print(p2.name) 
+
+p1 = Person()
+print(p1.name) # No change observed...
+
+"""
+# Changing the class attribute 'name'.
+
+class Person:
+  name = "anonymous"
+  
+  def change(self , name):  # Method 1 
+    self.__class__.name = name
+  
+  @classmethod
+  def change(cls , name):    # Method 2
+    cls.name = name
+    print("Hi")
+
+p1 = Person()
+p1.change("Harsh") # Output : Hi
+print(p1.name)     # Output : Harsh
