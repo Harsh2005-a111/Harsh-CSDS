@@ -945,28 +945,28 @@ print(s1.get_average())
 Create Account Class with 2 attributes - balance and account no.
 Create methods for debit credit and printing the balance...
 """
-class Account:
-  def __init__(self , balance , account_no ):
-    self.balance    = balance
-    self.account_no = account_no
+# class Account:
+#   def __init__(self , balance , account_no ):
+#     self.balance    = balance
+#     self.account_no = account_no
   
-  def debit(self , debitamt):
-    self.balance -= debitamt
-    print(f"Rs.{debitamt} was  debited...")
+#   def debit(self , debitamt):
+#     self.balance -= debitamt
+#     print(f"Rs.{debitamt} was  debited...")
   
-  def credit(self , creditamt):
-    self.balance += creditamt
-    print(f"Rs.{creditamt} was credited...")
+#   def credit(self , creditamt):
+#     self.balance += creditamt
+#     print(f"Rs.{creditamt} was credited...")
     
-  def show(self):
-    return self.balance
+#   def show(self):
+#     return self.balance
 
-init_amt = int(input("Enter your initial amt in bank account :"))
-Acc = Account( init_amt , "H12401414")
-print(Acc.account_no)
-debitamt = int(input("Enter amt. to be debited (in Rupees) :"))
-Acc.debit(debitamt)
-print(f"Balance is now Rs.{Acc.show()}")
-creditamt = int(input("Enter amt. to be credited (in Rupees) :")) 
-Acc.credit(creditamt)
-print(f"Balance is now Rs.{Acc.show()}")
+# init_amt = int(input("Enter your initial amt in bank account :"))
+# Acc = Account( init_amt , "H12401414")
+# print(Acc.account_no)
+# debitamt = int(input("Enter amt. to be debited (in Rupees) :"))
+# Acc.debit(debitamt)
+# print(f"Balance is now Rs.{Acc.show()}")
+# creditamt = int(input("Enter amt. to be credited (in Rupees) :")) 
+# Acc.credit(creditamt)
+# print(f"Balance is now Rs.{Acc.show()}")
