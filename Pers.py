@@ -1112,6 +1112,8 @@ stud1 = Student(98 , 97 , 99)
 stud1.phy = 89
 (stud1.calc)
 """
+
+"""
 class Complex:
     def __init__(self , real , img):
         self.real = real
@@ -1141,3 +1143,201 @@ num3.show()
 
 num4 = num2 - num1
 num4.show()
+"""
+
+# class Circle:
+  
+#   def __init__(self , radius):
+#     self.r = radius
+    
+#   def Area(self):
+#     return f"Area of Circle is {(22/7)*self.r**2} ."
+    
+#   def Perimeter(self):
+#     return f"Perimeter of Circle is {2*(22/7)*self.r} ."
+    
+# C = Circle(7)
+# print("Radius : " , C.r)
+# print(f"{C.Area()}\n{C.Perimeter()}")
+
+"""
+class Employee:
+    def __init__(self, role, dept, salary):
+        self.role = role
+        self.dept = dept
+        self.salary = salary
+    
+    def showDetails(self):
+        print("Role   : ", self.role)
+        print("Dept   : ", self.dept)
+        print("Salary : ", self.salary)
+  
+
+class Engineer(Employee):
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+        super().__init__("Engineer", "IT", "75,00,000")
+    
+    def show(self):
+        print("Name   : ", self.name)
+        print("Age    : ", self.age)
+        super().showDetails()
+        
+E = Engineer("Harsh", 19)
+
+E.show()
+"""
+"""
+import getpass
+ 
+p = getpass.getpass(prompt='Your favorite flower? ')
+ 
+if p.lower() == 'rose':
+    print('Welcome..!!!')
+else:
+    print('The answer entered by you is incorrect..!!!')
+"""
+"""
+x = 1
+
+if type(x) == int:
+  raise TypeError("Only integers are allowed")
+print(x)
+"""
+"""
+import json
+
+x = {
+  "name": "John",
+  "age": 30,
+  "married": True,
+  "divorced": False,
+  "children": ("Ann","Billy","H"),
+  "pets": None,
+  "cars": [
+    {"model": "BMW 230", "mpg": 27.5},
+    {"model": "Ford Edge", "mpg": 24.1}
+  ]
+}
+
+# use . and a space to separate objects, and a space, 
+# a = and a space to separate keys from their values:
+print(json.dumps(x, indent=4, separators=(" ; ", " = ")))
+"""
+"""
+import re
+
+#Search for an upper case "S" character in the beginning of a word, and print the word:
+
+txt = "The rain in Spain"
+x = re.search("S", txt)
+print(x.group())
+"""
+"""
+def remove_vowels(input_string):
+    vowels = "aeiouAEIOU"
+    result = ''.join(char for char in input_string if char not in vowels)
+    return result
+
+# Example usage
+text = "Hello, how are you?"
+print(remove_vowels(text))  # Output: "Hll, hw r y?"
+"""
+# def myfunct(*kids):
+
+#   print(f"The Youngest Kid is {kids[2]}")
+
+# myfunct("Emil","Harsh","Zoya")
+# # Order Matters....
+
+# def myfunct(**kid):
+
+#   print("The Eldest Child is " + kid["child1"] )
+
+# myfunct(child = "Harsh" , child1 = "Saumya")
+
+# class Student :
+  
+#   def college(self):
+
+#     print('A college')
+
+# s1 = Student()
+# s1.college()
+
+
+# class Base:
+
+#     def __init__(self, name, roll, role):
+
+#         self.name = name
+#         self.roll = roll
+#         self.role = role
+
+# class Intermediate(Base):
+
+#     def __init__(self, age, name, roll, role):
+
+#         super().__init__(name, roll, role)
+#         self.age = age
+
+# class Derived(Intermediate):
+
+#     def __init__(self, age, name, roll, role):
+
+#         super().__init__(age, name, roll, role)
+
+#     def Print_Data(self):
+
+#         print(f"The Name is : {self.name}")
+#         print(f"The Age is : {self.age}")
+#         print(f"The role is : {self.role}")
+#         print(f"The Roll is : {self.roll}")
+
+# # Creating Object of Base Class
+# obj = Derived(21, "Lokesh Singh", 25, "Software Trainer")
+# # Printing the data with the help of derived class
+# obj.Print_Data()
+
+"""
+# Using Lambda Map Filter combined in the code...
+
+numbers = [1, 2, 3, 4, 5, 6]
+
+square = lambda x: x ** 2
+
+squared_numbers = (map(square, numbers))
+
+even_squared = filter(lambda x: x % 2 == 0, squared_numbers)
+
+print(list(even_squared))
+"""
+# # Program to count the number of 1s in the binary representation of a number
+# try:
+#     # Get input from the user
+#     num = int(input("Enter an integer: "))
+    
+#     # Convert the number to binary and count the '1's
+#     binary_representation = bin(num)  # Get the binary representation (e.g., '0b101')
+#     count_of_ones = binary_representation.count('1')
+    
+#     # Display results
+#     print(f"The binary representation of {num} is {binary_representation[2:]}.")
+#     print(f"The number of 1s in the binary representation is {count_of_ones}.")
+# except ValueError:
+#     print("Please enter a valid integer.")
+# import numpy as np
+# arr = np.array([1, 2, 3, 4])
+# print("Mean:", np.mean(arr))
+# print("Standard Deviation:", np.std(arr))
+# print("Sine values:", np.sin(arr))
+"""
+import numpy as np
+
+arr = np.array([6, 7, 8, 9])
+
+x = np.searchsorted(arr, 15 , side = "right")
+
+print(x)
+"""
